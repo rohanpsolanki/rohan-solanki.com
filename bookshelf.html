@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: black;
+            color: white;
+            line-height: 1.05;
+            padding: 40px;
+            font-size: 24px;
+            text-rendering: optimizeLegibility;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            letter-spacing: -0.5px;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .header {
+            margin-bottom: 20px;
+            font-size: 48px;
+            letter-spacing: -1px;
+        }
+        .list-content {
+            margin-top: 20px;
+        }
+        .list-item {
+            margin-bottom: 5px;
+            list-style-type: disc;
+            margin-left: 30px;
+        }
+        .contact-info {
+            margin-top: 40px;
+            font-size: 18px;
+            line-height: 1.3;
+        }
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+            margin-right: 15px;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        .back-link {
+            display: block;
+            margin-top: 20px;
+            font-size: 24px;
+            text-decoration: none;
+            color: white;
+        }
+        @media (max-width: 600px) {
+            body {
+                padding: 20px;
+                font-size: 20px;
+            }
+            .header {
+                font-size: 40px;
+            }
+            .contact-info {
+                font-size: 16px;
+            }
+            .back-link {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            Bookshelf
+        </div>
+
+        <div class="context-paragraph">
+            The books of my past, present, and future. 
+        </div>
+
+        
+        <ul class="list-content">
+            <li class="list-item">12/24 | Normal People | Sally Rooney</li>
+            <li class="list-item">11/24 | The Memory Police | Yōko Ogawa</li>
+            <li class="list-item">11/24 | Never Let Me Go | Kazuo Ishiguro</li>
+            <li class="list-item">11/24 | And Then There Were None | Agatha Christie</li>
+            <li class="list-item">11/24 | The Remains of the Day | Kazuo Ishiguro</li>
+            <li class="list-item">10/24 | The Flick | Annie Baker</li>
+        </ul>
+
+        <a href="index.html" class="back-link">← Back</a>
+    </div>
+</body>
+</html>
