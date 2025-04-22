@@ -31,20 +31,11 @@
             font-size: 48px;
             letter-spacing: -1px;
         }
-        .menu-item {
-            display: block;
-            text-decoration: none;
-            color: white;
-            margin-bottom: 2px;
+        .list-content {
+            margin-top: 20px;
         }
-        .subtitle {
-            font-size: 30px;
-        }
-        .footnote {
-            font-size: 24px;
-            vertical-align: super;
-            line-height: 0;
-            margin-left: 3px;
+        .list-item {
+            margin-bottom: 5px;
         }
         .contact-info {
             margin-top: 40px;
@@ -59,10 +50,17 @@
         .contact-info a:hover {
             text-decoration: underline;
         }
+        .back-link {
+            display: block;
+            margin-top: 20px;
+            font-size: 16px;
+            text-decoration: none;
+            color: white;
+        }
         @media (max-width: 600px) {
             body {
                 padding: 20px;
-                font-size: 28px;
+                font-size: 20px;
             }
             .header {
                 font-size: 40px;
@@ -70,41 +68,45 @@
             .contact-info {
                 font-size: 16px;
             }
+            .back-link {
+                font-size: 14px;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="header">
-            Rohan Solanki
+            The List
+        </div>
+        
+        <div class="list-content">
+            <div class="list-item">1. Hike the Pacific Crest Trail</div>
+            <div class="list-item">2. Learn to cook Thai food</div>
+            <div class="list-item">3. Learn to cook Indian food</div>
+            <div class="list-item">4. Learn to cook Italian food</div>
+            <div class="list-item">5. Read 2000 books </div>
+            <div class="list-item">6. Run an ultramarathon (100 miles)</div>
+            <div class="list-item">7. Bench press 225 pounds</div>
+            <div class="list-item">8. Get a masters degree</div>
+            <div class="list-item">9. Learn a musical instrument</div>
+            <div class="list-item">10. Write or perform in an Off-Broadway play</div>
+            <div class="list-item">11. Make a short film and submit it to festivals</div>
+            <div class="list-item">12. Get scuba certified</div>
+            <div class="list-item">13. Become fluent in Hindi</div>
+            <div class="list-item">14. Become fluent in Spanish</div>
+            <div class="list-item">15. Win a WSOP bracelet</div>
+            <div class="list-item">16. Visit 200 countries</div>
+            <div class="list-item" style="text-decoration: line-through;">17. Move to New York City</div>
+            <div class="list-item">18. Sail across or around a body of water</div>
+            <div class="list-item">19. Get published in the New York Times or New Yorker</div>
+            <div class="list-item">20. Live in another country for 6 months</div>
+            <div class="list-item">21. Write for a TV show I watch</div>
+            <div class="list-item">22. Cage-dive with Great White Sharks</div>
+            <div class="list-item">23. Go to a World Cup match</div>
         </div>
 
-        <div class="menu">
-            
-            <a href="#" class="menu-item">
-                About
-            </a>
-            <a href="#" class="menu-item">
-                Photography
-            </a>
-            <a href="#" class="menu-item">
-                Shelf
-            </a>
-            <a href="#" class="menu-item">
-                The List
-            </a>
-            
-        </div>
-
-        <div class="contact-info">
-            <div>Manhattan, New York 10032</div>
-            <div>
-                <a href="mailto:rohan.solanki@gmail.com">Email</a>
-                <a href="https://x.com/therohansolanki">Twitter</a>
-                <a href="https://www.instagram.com/rohanthesolanki">Instagram</a>
-            </div>
-        </div>
-            <a href="index.html" class="back-link">← Back to Home</a>
+        <a href="index.html" class="back-link">← Back to Home</a>
     </div>
 </body>
 </html>
