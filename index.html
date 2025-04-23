@@ -9,7 +9,7 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            text-align: center; /* Ensure everything is centered by default */
+            text-align: center;
         }
         html, body {
             height: 100%;
@@ -37,13 +37,17 @@
             letter-spacing: -1px;
         }
         .menu {
-            text-align: center; /* Explicitly center menu items */
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
         .menu-item {
-            display: inline-block; /* Changed to inline-block for better centering */
+            display: block;
             text-decoration: none;
             color: white;
             margin-bottom: 2px;
+            width: 100%;
         }
         .contact-info {
             margin-top: 40px;
@@ -53,8 +57,8 @@
         .contact-info a {
             color: white;
             text-decoration: none;
-            margin: 0 7px; /* Changed from margin-right to equal margins */
-            display: inline-block; /* Better for centering */
+            margin: 0 7px;
+            display: inline-block;
         }
         .contact-info a:hover {
             text-decoration: underline;
@@ -69,19 +73,19 @@
 <body>
     <div class="container">
         <div class="header">
-            rohan solanki
+            Rohan Solanki
         </div>
         <div class="menu">
-            <a href="photography.html" class="menu-item">photography</a>
-            <a href="bookshelf.html" class="menu-item">bookshelf</a>
-            <a href="list-100.html" class="menu-item">list 100</a>
+            <a href="photography.html" class="menu-item">Photography</a>
+            <a href="bookshelf.html" class="menu-item">Bookshelf</a>
+            <a href="list-100.html" class="menu-item">List 100</a>
         </div>
         <div class="contact-info">
-            <div>manhattan, new york 10032</div>
+            <div>Manhattan, New York 10032</div>
             <div>
-                <a href="mailto:rohan.solanki@gmail.com">email</a>
-                <a href="https://x.com/therohansolanki">twitter</a>
-                <a href="https://www.instagram.com/rohanthesolanki">instagram</a>
+                <a href="mailto:rohan.solanki@gmail.com">Email</a>
+                <a href="https://x.com/therohansolanki">Twitter</a>
+                <a href="https://www.instagram.com/rohanthesolanki">Instagram</a>
             </div>
         </div>
     </div>
