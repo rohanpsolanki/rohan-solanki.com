@@ -10,9 +10,6 @@
             padding: 0;
             box-sizing: border-box;
         }
-        html, body {
-            height: 100%;
-        }
         body {
             font-family: 'Times New Roman', Times, serif;
             background-color: black;
@@ -23,16 +20,12 @@
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
             letter-spacing: -0.5px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding-top: 60px; /* Added padding to account for browser menu */
-            padding-bottom: 60px; /* Added equal padding at bottom for balance */
+            padding: 100px 40px; /* Added significant top padding */
         }
         .container {
             max-width: 1000px;
+            margin: 0 auto;
             text-align: center;
-            width: 100%;
         }
         .header {
             font-size: 18px;
@@ -59,9 +52,7 @@
         }
         @media (max-width: 600px) {
             body {
-                padding: 20px;
-                padding-top: 60px; /* Maintain top padding on mobile */
-                padding-bottom: 60px;
+                padding: 100px 20px;
             }
             .list-content {
                 min-width: 300px;
