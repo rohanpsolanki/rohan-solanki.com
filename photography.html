@@ -32,38 +32,38 @@
             font-size: 48px;
             letter-spacing: -1px;
         }
-        .context-paragraph {
-            margin-bottom: 30px;
+        .subheader {
             font-size: 24px;
-            text-align: left;
-            display: inline-block;
+            margin-bottom: 30px;
+            text-align: center;
         }
-        .albums {
+        .gallery {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 20px;
             margin-bottom: 30px;
         }
-        .album-item {
+        .gallery-item {
             position: relative;
             overflow: hidden;
-            text-align: left;
         }
-        .album-item img {
+        .gallery-item img {
             width: 100%;
             height: auto;
             transition: transform 0.3s ease;
         }
-        .album-item:hover img {
+        .gallery-item:hover img {
             transform: scale(1.05);
         }
-        .album-description {
+        .gallery-item-description {
             margin-top: 10px;
             font-size: 24px;
+            text-align: left;
         }
-        .album-details {
+        .gallery-item-details {
             font-size: 18px;
             color: #888;
+            text-align: left;
         }
         .back-link {
             display: block;
@@ -74,12 +74,12 @@
             text-align: left;
         }
         @media (max-width: 1000px) {
-            .albums {
+            .gallery {
                 grid-template-columns: repeat(2, 1fr);
             }
         }
         @media (max-width: 600px) {
-            .albums {
+            .gallery {
                 grid-template-columns: 1fr;
             }
             body {
@@ -89,13 +89,13 @@
             .header {
                 font-size: 40px;
             }
-            .context-paragraph {
+            .subheader {
                 font-size: 20px;
             }
-            .album-description {
+            .gallery-item-description {
                 font-size: 20px;
             }
-            .album-details {
+            .gallery-item-details {
                 font-size: 16px;
             }
         }
@@ -107,63 +107,37 @@
             Photography
         </div>
         
-        <div class="context-paragraph">
-            A collection of photographic works organized by project, location, and theme.
+        <div class="subheader">
+            a sample, best viewed in full screen<br>
+            click galleries to view
         </div>
 
-        <div class="albums">
-            <div class="album-item">
-                <img src="/api/placeholder/400/300" alt="Album 1">
-                <div class="album-description">
-                    Album Name 1
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="/api/placeholder/400/300" alt="China">
+                <div class="gallery-item-description">
+                    China
                 </div>
-                <div class="album-details">
-                    Location | Year | Number of Photos
-                </div>
-            </div>
-            <div class="album-item">
-                <img src="/api/placeholder/400/300" alt="Album 2">
-                <div class="album-description">
-                    Album Name 2
-                </div>
-                <div class="album-details">
-                    Location | Year | Number of Photos
+                <div class="gallery-item-details">
+                    June 2024
                 </div>
             </div>
-            <div class="album-item">
-                <img src="/api/placeholder/400/300" alt="Album 3">
-                <div class="album-description">
-                    Album Name 3
+            <div class="gallery-item">
+                <img src="/api/placeholder/400/300" alt="Ganza">
+                <div class="gallery-item-description">
+                    Ganza
                 </div>
-                <div class="album-details">
-                    Location | Year | Number of Photos
-                </div>
-            </div>
-            <div class="album-item">
-                <img src="/api/placeholder/400/300" alt="Album 4">
-                <div class="album-description">
-                    Album Name 4
-                </div>
-                <div class="album-details">
-                    Location | Year | Number of Photos
+                <div class="gallery-item-details">
+                    April 2024
                 </div>
             </div>
-            <div class="album-item">
-                <img src="/api/placeholder/400/300" alt="Album 5">
-                <div class="album-description">
-                    Album Name 5
+            <div class="gallery-item">
+                <img src="/api/placeholder/400/300" alt="Moon Shadows">
+                <div class="gallery-item-description">
+                    Moon Shadows
                 </div>
-                <div class="album-details">
-                    Location | Year | Number of Photos
-                </div>
-            </div>
-            <div class="album-item">
-                <img src="/api/placeholder/400/300" alt="Album 6">
-                <div class="album-description">
-                    Album Name 6
-                </div>
-                <div class="album-details">
-                    Location | Year | Number of Photos
+                <div class="gallery-item-details">
+                    October 2023
                 </div>
             </div>
         </div>
