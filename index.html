@@ -9,9 +9,10 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            text-align: center; /* Ensure everything is centered by default */
         }
         html, body {
-            height: 100%; /* Make sure the html and body take full height */
+            height: 100%;
         }
         body {
             font-family: 'Times New Roman', Times, serif;
@@ -23,35 +24,26 @@
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
             letter-spacing: -0.5px;
-            /* Remove padding from body as we'll center the container */
             display: flex;
             justify-content: center;
             align-items: center;
         }
         .container {
             max-width: 1000px;
-            /* Remove margin: 0 auto as we're using flex centering */
-            text-align: center;
         }
         .header {
             margin-bottom: 20px;
             font-size: 18px;
             letter-spacing: -1px;
         }
+        .menu {
+            text-align: center; /* Explicitly center menu items */
+        }
         .menu-item {
-            display: block;
+            display: inline-block; /* Changed to inline-block for better centering */
             text-decoration: none;
             color: white;
             margin-bottom: 2px;
-        }
-        .subtitle {
-            font-size: 18px;
-        }
-        .footnote {
-            font-size: 18px;
-            vertical-align: super;
-            line-height: 0;
-            margin-left: 3px;
         }
         .contact-info {
             margin-top: 40px;
@@ -61,7 +53,8 @@
         .contact-info a {
             color: white;
             text-decoration: none;
-            margin-right: 15px;
+            margin: 0 7px; /* Changed from margin-right to equal margins */
+            display: inline-block; /* Better for centering */
         }
         .contact-info a:hover {
             text-decoration: underline;
@@ -69,13 +62,6 @@
         @media (max-width: 600px) {
             body {
                 padding: 20px;
-                font-size: 18px;
-            }
-            .header {
-                font-size: 18px;
-            }
-            .contact-info {
-                font-size: 18px;
             }
         }
     </style>
@@ -83,19 +69,19 @@
 <body>
     <div class="container">
         <div class="header">
-            Rohan Solanki
+            rohan solanki
         </div>
         <div class="menu">
-            <a href="photography.html" class="menu-item">Photography</a>
-            <a href="bookshelf.html" class="menu-item">Bookshelf</a>
-            <a href="list-100.html" class="menu-item">List 100</a>
+            <a href="photography.html" class="menu-item">photography</a>
+            <a href="bookshelf.html" class="menu-item">bookshelf</a>
+            <a href="list-100.html" class="menu-item">list 100</a>
         </div>
         <div class="contact-info">
-            <div>Manhattan, New York 10032</div>
+            <div>manhattan, new york 10032</div>
             <div>
-                <a href="mailto:rohan.solanki@gmail.com">Email</a>
-                <a href="https://x.com/therohansolanki">Twitter</a>
-                <a href="https://www.instagram.com/rohanthesolanki">Instagram</a>
+                <a href="mailto:rohan.solanki@gmail.com">email</a>
+                <a href="https://x.com/therohansolanki">twitter</a>
+                <a href="https://www.instagram.com/rohanthesolanki">instagram</a>
             </div>
         </div>
     </div>
