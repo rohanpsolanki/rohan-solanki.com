@@ -30,17 +30,26 @@
         .container {
             max-width: 1000px;
             text-align: center;
+            width: 100%;
+            position: relative;
+            z-index: 1;
         }
         .header {
             font-size: 18px;
             margin-bottom: 40px;
+            display: block;
+            visibility: visible;
+            position: relative;
+            z-index: 2;
+            width: 100%;
+            opacity: 1;
+            color: white;
         }
         .context-paragraph {
             margin-bottom: 40px;
         }
         .list-content {
             margin-top: 20px;
-            /* Create a centered container for the list */
             display: inline-block;
             text-align: left;
             min-width: 400px;
@@ -100,7 +109,6 @@
             <div class="list-item">23. Go to a World Cup match</div>
             <div class="list-item">24. Perform a set at the Comedy Cellar</div>
         </div>
-
         <a href="index.html" class="back-link">← Back</a>
     </div>
 </body>
