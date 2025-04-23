@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,9 +10,6 @@
             padding: 0;
             box-sizing: border-box;
         }
-        html, body {
-            height: 100%;
-        }
         body {
             font-family: 'Times New Roman', Times, serif;
             background-color: black;
@@ -24,13 +20,12 @@
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
             letter-spacing: -0.5px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            padding: 100px 40px; /* Added top padding instead of flex centering */
         }
         .container {
             max-width: 1000px;
-            text-align: center; /* Center text in container */
+            margin: 0 auto;
+            text-align: center;
         }
         .header {
             margin-bottom: 40px;
@@ -49,10 +44,9 @@
         .list-content {
             margin-top: 20px;
             list-style-type: none;
-            /* Create a centered container for the list */
             display: inline-block;
-            text-align: left; /* Left align text within the list */
-            min-width: 400px; /* Minimum width to contain books - adjust as needed */
+            text-align: left;
+            min-width: 400px;
         }
         .list-item {
             margin-bottom: 5px;
@@ -66,10 +60,10 @@
         }
         @media (max-width: 600px) {
             body {
-                padding: 20px;
+                padding: 100px 20px;
             }
             .list-content {
-                min-width: 300px; /* Smaller minimum width for mobile */
+                min-width: 300px;
             }
         }
     </style>
