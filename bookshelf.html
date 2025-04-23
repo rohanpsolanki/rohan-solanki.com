@@ -10,7 +10,6 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            text-align: center;
         }
         html, body {
             height: 100%;
@@ -31,6 +30,7 @@
         }
         .container {
             max-width: 1000px;
+            text-align: center; /* Center text in container */
         }
         .header {
             margin-bottom: 40px;
@@ -48,7 +48,11 @@
         }
         .list-content {
             margin-top: 20px;
-            list-style-type: none; /* Removed bullets for better centering */
+            list-style-type: none;
+            /* Create a centered container for the list */
+            display: inline-block;
+            text-align: left; /* Left align text within the list */
+            min-width: 400px; /* Minimum width to contain books - adjust as needed */
         }
         .list-item {
             margin-bottom: 5px;
@@ -63,6 +67,9 @@
         @media (max-width: 600px) {
             body {
                 padding: 20px;
+            }
+            .list-content {
+                min-width: 300px; /* Smaller minimum width for mobile */
             }
         }
     </style>
