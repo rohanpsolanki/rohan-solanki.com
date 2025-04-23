@@ -26,24 +26,17 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            padding-top: 60px; /* Added padding to account for browser menu */
+            padding-bottom: 60px; /* Added equal padding at bottom for balance */
         }
         .container {
             max-width: 1000px;
             text-align: center;
             width: 100%;
-            position: relative;
-            z-index: 1;
         }
         .header {
             font-size: 18px;
             margin-bottom: 40px;
-            display: block;
-            visibility: visible;
-            position: relative;
-            z-index: 2;
-            width: 100%;
-            opacity: 1;
-            color: white;
         }
         .context-paragraph {
             margin-bottom: 40px;
@@ -67,6 +60,8 @@
         @media (max-width: 600px) {
             body {
                 padding: 20px;
+                padding-top: 60px; /* Maintain top padding on mobile */
+                padding-bottom: 60px;
             }
             .list-content {
                 min-width: 300px;
