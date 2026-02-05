@@ -21,26 +21,19 @@
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
             letter-spacing: -0.5px;
-        }
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
         }
         .content {
             max-width: 600px;
-            margin: 0 auto;
             text-align: left;
         }
         .profile-photo {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            object-fit: cover;
+            width: 300px;
+            height: auto;
             margin-bottom: 40px;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
         }
         .intro-paragraph {
             margin-bottom: 20px;
@@ -50,32 +43,30 @@
                 padding: 60px 20px;
             }
             .profile-photo {
-                width: 150px;
-                height: 150px;
+                width: 100%;
+                max-width: 300px;
             }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="content">
-            <img src="homepage_image.JPG" alt="Rohan Solanki" class="profile-photo">
-            
-            <div class="intro-paragraph">
-                hi, i'm rohan.
-            </div>
-            <div class="intro-paragraph">
-                i live in new york city. i grew up in los angeles and palo alto.
-            </div>
-            <div class="intro-paragraph">
-                for the last two years, i've been a product marketer at workato.
-            </div>
-            <div class="intro-paragraph">
-                i'm interested in technology, storytelling, and living deliberately.
-            </div>
-            <div class="intro-paragraph">
-                in my free time, i read, take photos, and perpetually sidequest.
-            </div>
+    <div class="content">
+        <img src="IMG_3995.JPG" alt="Rohan Solanki" class="profile-photo">
+        
+        <div class="intro-paragraph">
+            hi, i'm rohan.
+        </div>
+        <div class="intro-paragraph">
+            i live in new york city. i grew up in los angeles and palo alto.
+        </div>
+        <div class="intro-paragraph">
+            for the last two years, i've been a product marketer at workato.
+        </div>
+        <div class="intro-paragraph">
+            i'm interested in technology, storytelling, and living deliberately.
+        </div>
+        <div class="intro-paragraph">
+            in my free time, i read, take photos, and perpetually sidequest.
         </div>
     </div>
 </body>
