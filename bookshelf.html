@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bookshelf</title>
+    <title>bookshelf</title>
     <style>
         * {
             margin: 0;
@@ -14,18 +14,21 @@
             font-family: 'Times New Roman', Times, serif;
             background-color: black;
             color: white;
-            line-height: 1.05;
+            line-height: 1.6;
             font-size: 18px;
             text-rendering: optimizeLegibility;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
             letter-spacing: -0.5px;
             padding: 100px 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
         }
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            text-align: center;
+        .content {
+            max-width: 600px;
+            text-align: left;
         }
         .header {
             margin-bottom: 40px;
@@ -38,15 +41,8 @@
             font-size: 18px;
             letter-spacing: -1px;
         }
-        .context-paragraph {
-            margin-bottom: 40px;
-        }
         .list-content {
-            margin-top: 20px;
             list-style-type: none;
-            display: inline-block;
-            text-align: left;
-            min-width: 400px;
         }
         .list-item {
             margin-bottom: 5px;
@@ -63,46 +59,31 @@
         }
         @media (max-width: 600px) {
             body {
-                padding: 100px 20px;
-            }
-            .list-content {
-                min-width: 300px;
+                padding: 60px 20px;
             }
         }
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="content">
         <div class="header">
-            Bookshelf
+            bookshelf
         </div>
-       
+        
         <div class="list-header">
-        July 2025
+            selected past reads    
         </div>
         <ul class="list-content">
-            <li class="list-item">Kitchen Confidential by Anthony Bourdain</li>
+            <li class="list-item">kitchen confidential by anthony bourdain</li>
+            <li class="list-item">zero to one by peter thiel</li>
+            <li class="list-item">normal people by sally rooney</li>
+            <li class="list-item">the memory police by yōko ogawa</li>
+            <li class="list-item">never let me go by kazuo ishiguro</li>
+            <li class="list-item">the remains of the day by kazuo ishiguro</li>
+            <li class="list-item">the flick by annie baker</li>
         </ul>
-    
-        <div class="list-header">
-        June 2025
-        </div>
-        <ul class="list-content">
-            <li class="list-item">Zero to One by Peter Thiel</li>
-        </ul>
-
-        <div class="list-header">
-        Past Reads    
-        </div>
-        <ul class="list-content">
-            <li class="list-item">Normal People by Sally Rooney</li>
-            <li class="list-item">The Memory Police by Yōko Ogawa</li>
-            <li class="list-item">Never Let Me Go by Kazuo Ishiguro</li>
-            <li class="list-item">And Then There Were None by Agatha Christie</li>
-            <li class="list-item">The Remains of the Day by Kazuo Ishiguro</li>
-            <li class="list-item">The Flick by Annie Baker</li>
-        </ul>
-        <a href="index.html" class="back-link">← Back</a>
+        
+        <a href="index.html" class="back-link">← back</a>
     </div>
 </body>
 </html>
