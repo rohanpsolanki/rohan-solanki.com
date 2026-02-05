@@ -3,29 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Photography</title>
+    <title>photography</title>
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            text-align: center;
         }
         body {
             font-family: 'Times New Roman', Times, serif;
             background-color: black;
             color: white;
-            line-height: 1.05;
+            line-height: 1.6;
             font-size: 18px;
             text-rendering: optimizeLegibility;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
             letter-spacing: -0.5px;
             padding: 100px 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
         }
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
+        .content {
+            max-width: 600px;
+            text-align: left;
         }
         .header {
             margin-bottom: 40px;
@@ -37,24 +40,23 @@
             margin-bottom: 40px;
         }
         .gallery {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
             margin-bottom: 30px;
         }
         .gallery-item {
-            position: relative;
-            overflow: hidden;
             text-decoration: none;
             color: white;
         }
         .gallery-item img {
             width: 100%;
+            max-width: 400px;
             height: auto;
-            transition: transform 0.3s ease;
+            transition: opacity 0.3s ease;
         }
         .gallery-item:hover img {
-            transform: scale(1.05);
+            opacity: 0.8;
         }
         .gallery-item-description {
             margin-top: 10px;
@@ -77,44 +79,37 @@
         .back-link:hover {
             text-decoration: underline;
         }
-        @media (max-width: 1000px) {
-            .gallery {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
         @media (max-width: 600px) {
-            .gallery {
-                grid-template-columns: 1fr;
-            }
             body {
-                padding: 100px 20px;
+                padding: 60px 20px;
+            }
+            .gallery-item img {
+                max-width: 100%;
             }
         }
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="content">
         <div class="header">
-            Photography
+            photography
         </div>
         
         <div class="subheader">
-            Here are some photos I took. Click the galleries to view. 
+            here are some photos i took. click the galleries to view. 
         </div>
         <div class="gallery">
             <a href="italy.html" class="gallery-item">
                 <img src="italyimages/italy_cover_photo.jpg" alt="Italy">
                 <div class="gallery-item-description">
-                    Italy
+                    italy
                 </div>
                 <div class="gallery-item-details">
-                    November 2024
+                    november 2024
                 </div>
             </a>
-            <div class="gallery-item"></div>
-            <div class="gallery-item"></div>
         </div>
-        <a href="index.html" class="back-link">← Back</a>
+        <a href="index.html" class="back-link">← back</a>
     </div>
 </body>
 </html>
