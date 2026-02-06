@@ -45,6 +45,22 @@
         .list-item {
             margin-bottom: 5px;
         }
+        .list-item-with-photo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 5px;
+        }
+        .list-item-with-photo img {
+            width: 40px;
+            height: 40px;
+            object-fit: cover;
+            cursor: pointer;
+            transition: opacity 0.3s;
+        }
+        .list-item-with-photo img:hover {
+            opacity: 0.7;
+        }
         .back-link {
             display: block;
             margin-top: 40px;
@@ -75,19 +91,29 @@
             <li class="list-item">learn to cook indian food</li>
             <li class="list-item">learn to cook italian food</li>
             <li class="list-item">read 1000 books</li>
-            <li class="list-item">run a marathon ✅</li>
+            <li class="list-item-with-photo">
+                run a marathon ✅
+                <a href="photography/first_year_in_nyc/IMG_2012.JPG" target="_blank">
+                    <img src="marathon.jpg" alt="Marathon finish">
+                </a>
+            </li>
             <li class="list-item">run a 100 mile ultramarathon</li>
             <li class="list-item">bench press 225 pounds</li>
             <li class="list-item">get a masters degree</li>
             <li class="list-item">learn a musical instrument</li>
             <li class="list-item">write or perform in a broadway-adjacent play</li>
             <li class="list-item">make a short film and submit it to festivals</li>
-            <li class="list-item">get scuba certified ✅</li>
+            <li class="list-item-with-photo">
+                get scuba certified ✅
+                <a href="photography/cozumel/IMG_4056.JPG" target="_blank">
+                    <img src="photography/cozumel/IMG_4058.JPG" alt="scuba diving">
+                </a>
+            </li>
             <li class="list-item">become fluent in hindi</li>
             <li class="list-item">become fluent in spanish</li>
             <li class="list-item">win a wsop bracelet</li>
             <li class="list-item">visit 200 countries</li>
-            <li class="list-item">move to new york city ✅</li>
+            <li class="list-item-with-photo">move to new york city ✅</li>
             <li class="list-item">sail across or around a body of water</li>
             <li class="list-item">get published in the new york times or new yorker</li>
             <li class="list-item">live in another country for 6 months</li>
