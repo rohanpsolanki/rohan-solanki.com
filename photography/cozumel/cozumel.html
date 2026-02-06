@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cozumel</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: black;
+            color: white;
+            line-height: 1.6;
+            padding: 100px 40px;
+            font-size: 18px;
+            text-rendering: optimizeLegibility;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            letter-spacing: -0.5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .content {
+            max-width: 800px;
+            text-align: left;
+            width: 100%;
+        }
+        .header {
+            margin-bottom: 40px;
+            font-size: 18px;
+            letter-spacing: -1px;
+        }
+        .gallery-container {
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .gallery-image {
+            width: 100%;
+            height: auto;
+            max-height: 70vh;
+            object-fit: contain;
+            display: block;
+        }
+        .gallery-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+            gap: 20px;
+        }
+        .nav-button {
+            background: none;
+            border: none;
+            color: white;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 18px;
+            cursor: pointer;
+            padding: 10px 20px;
+            transition: opacity 0.3s;
+        }
+        .nav-button:hover {
+            opacity: 0.7;
+        }
+        .nav-button:disabled {
+            opacity: 0.3;
+            cursor: not-allowed;
+        }
+        .photo-counter {
+            font-size: 18px;
+            color: #888;
+        }
+        .back-link {
+            display: block;
+            margin-top: 40px;
+            font-size: 18px;
+            text-decoration: none;
+            color: white;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 600px) {
+            body {
+                padding: 60px 20px;
+            }
+            .nav-button {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="header">
+            cozumel
+        </div>
+        
+        <div class="gallery-container">
+            <img id="galleryImage" src="1c2c2b30-158b-48ac-98ee-ed77fd921af.jpg" alt="Cozumel" class="gallery-image">
+        </div>
+        
+        <div class="gallery-nav">
+            <button id="prevBtn" class="nav-button">← previous</button>
+            <div class="photo-counter">
+                <span id="currentPhoto">1</span> / <span id="totalPhotos">21</span>
+            </div>
+            <button id="nextBtn" class="nav-button">next →</button>
+        </div>
+        
+        <a href="../../photography.html" class="back-link">← back</a>
+    </div>
+
+    <script>
+        const images = [
+            '1c2c2b30-158b-48ac-98ee-ed77fd921af.jpg',
+            'GPTempDownload 10.JPG',
+            'GPTempDownload 9.JPG',
+            'IMG_3736.jpeg',
+            'IMG_3758.jpeg',
+            'IMG_3765.jpeg',
+            'IMG_3767.jpeg',
+            'IMG_3771.jpeg',
+            'IMG_3777.jpeg',
+            'IMG_3789.jpeg',
+            'IMG_3802.jpeg',
+            'IMG_3813.jpeg',
+            'IMG_3848.jpeg',
+            'IMG_3893.jpeg',
+            'IMG_3994.jpeg',
+            'IMG_4009.jpeg',
+            'IMG_4013.jpeg',
+            'IMG_4017.jpeg',
+            'IMG_4048.jpeg',
+            'IMG_4110.jpeg',
+            'cozumel_cover.jpeg'
+        ];
+
+        let currentIndex = 0;
+        const galleryImage = document.getElementById('galleryImage');
+        const currentPhoto = document.getElementById('currentPhoto');
+        const totalPhotos = document.getElementById('totalPhotos');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+
+        totalPhotos.textContent = images.length;
+
+        function updateGallery() {
+            galleryImage.src = images[currentIndex];
+            currentPhoto.textContent = currentIndex + 1;
+            
+            prevBtn.disabled = currentIndex === 0;
+            nextBtn.disabled = currentIndex === images.length - 1;
+        }
+
+        prevBtn.addEventListener('click', () => {
+            if (currentIndex > 0) {
+                currentIndex--;
+                updateGallery();
+            }
+        });
+
+        nextBtn.addEventListener('click', () => {
+            if (currentIndex < images.length - 1) {
+                currentIndex++;
+                updateGallery();
+            }
+        });
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowLeft') {
+                prevBtn.click();
+            } else if (e.key === 'ArrowRight') {
+                nextBtn.click();
+            }
+        });
+
+        updateGallery();
+    </script>
+</body>
+</html>
