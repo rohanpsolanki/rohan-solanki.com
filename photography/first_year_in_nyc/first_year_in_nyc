@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>first year in nyc</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: black;
+            color: white;
+            line-height: 1.6;
+            padding: 100px 40px;
+            font-size: 18px;
+            text-rendering: optimizeLegibility;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            letter-spacing: -0.5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .content {
+            max-width: 800px;
+            text-align: left;
+            width: 100%;
+        }
+        .header {
+            margin-bottom: 40px;
+            font-size: 18px;
+            letter-spacing: -1px;
+        }
+        .gallery-container {
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .gallery-image {
+            width: 100%;
+            height: auto;
+            max-height: 70vh;
+            object-fit: contain;
+            display: block;
+        }
+        .gallery-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+            gap: 20px;
+        }
+        .nav-button {
+            background: none;
+            border: none;
+            color: white;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 18px;
+            cursor: pointer;
+            padding: 10px 20px;
+            transition: opacity 0.3s;
+        }
+        .nav-button:hover {
+            opacity: 0.7;
+        }
+        .nav-button:disabled {
+            opacity: 0.3;
+            cursor: not-allowed;
+        }
+        .photo-counter {
+            font-size: 18px;
+            color: #888;
+        }
+        .back-link {
+            display: block;
+            margin-top: 40px;
+            font-size: 18px;
+            text-decoration: none;
+            color: white;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 600px) {
+            body {
+                padding: 60px 20px;
+            }
+            .nav-button {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="header">
+            first year in nyc
+        </div>
+        
+        <div class="gallery-container">
+            <img id="galleryImage" src="IMG_0005.jpeg" alt="First Year in NYC" class="gallery-image">
+        </div>
+        
+        <div class="gallery-nav">
+            <button id="prevBtn" class="nav-button">← previous</button>
+            <div class="photo-counter">
+                <span id="currentPhoto">1</span> / <span id="totalPhotos">41</span>
+            </div>
+            <button id="nextBtn" class="nav-button">next →</button>
+        </div>
+        
+        <a href="../../photography.html" class="back-link">← back</a>
+    </div>
+
+    <script>
+        const images = [
+            'IMG_0005.jpeg',
+            'IMG_0109.jpeg',
+            'IMG_0320.jpeg',
+            'IMG_0600.jpeg',
+            'IMG_0702.jpeg',
+            'IMG_0723.jpeg',
+            'IMG_0755.jpeg',
+            'IMG_0762.jpeg',
+            'IMG_0803.jpeg',
+            'IMG_0817.jpeg',
+            'IMG_1101.jpeg',
+            'IMG_1202.jpeg',
+            'IMG_1209.jpeg',
+            'IMG_1284.jpeg',
+            'IMG_1297.jpeg',
+            'IMG_1299.jpeg',
+            'IMG_1328.jpeg',
+            'IMG_1368.jpeg',
+            'IMG_1395.jpeg',
+            'IMG_1409.jpeg',
+            'IMG_1493.jpeg',
+            'IMG_1666.jpeg',
+            'IMG_1684.jpeg',
+            'IMG_1706.jpeg',
+            'IMG_1864.jpeg',
+            'IMG_1892.jpeg',
+            'IMG_1896.jpeg',
+            'IMG_2012.JPG',
+            'IMG_2049.jpeg',
+            'IMG_2649.jpeg',
+            'IMG_2839.jpeg',
+            'IMG_2904.jpeg',
+            'IMG_3020.jpeg',
+            'IMG_3251.jpeg',
+            'IMG_3304.jpeg',
+            'IMG_3780.jpeg',
+            'IMG_4697.jpeg',
+            'IMG_4715.jpeg',
+            'IMG_4954.jpeg',
+            'IMG_5164.jpeg',
+            'IMG_9073.jpeg',
+            'IMG_9484.jpeg',
+            'IMG_9799.jpeg'
+        ];
+
+        let currentIndex = 0;
+        const galleryImage = document.getElementById('galleryImage');
+        const currentPhoto = document.getElementById('currentPhoto');
+        const totalPhotos = document.getElementById('totalPhotos');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+
+        totalPhotos.textContent = images.length;
+
+        function updateGallery() {
+            galleryImage.src = images[currentIndex];
+            currentPhoto.textContent = currentIndex + 1;
+            
+            prevBtn.disabled = currentIndex === 0;
+            nextBtn.disabled = currentIndex === images.length - 1;
+        }
+
+        prevBtn.addEventListener('click', () => {
+            if (currentIndex > 0) {
+                currentIndex--;
+                updateGallery();
+            }
+        });
+
+        nextBtn.addEventListener('click', () => {
+            if (currentIndex < images.length - 1) {
+                currentIndex++;
+                updateGallery();
+            }
+        });
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowLeft') {
+                prevBtn.click();
+            } else if (e.key === 'ArrowRight') {
+                nextBtn.click();
+            }
+        });
+
+        updateGallery();
+    </script>
+</body>
+</html>
