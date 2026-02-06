@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>List 100</title>
+    <title>list 100</title>
     <style>
         * {
             margin: 0;
@@ -21,24 +21,26 @@
             -moz-osx-font-smoothing: grayscale;
             letter-spacing: -0.5px;
             padding: 100px 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
         }
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            text-align: center;
+        .content {
+            max-width: 600px;
+            text-align: left;
         }
         .header {
-            font-size: 18px;
             margin-bottom: 40px;
+            font-size: 18px;
+            letter-spacing: -1px;
         }
         .context-paragraph {
             margin-bottom: 40px;
         }
         .list-content {
-            margin-top: 20px;
-            display: inline-block;
-            text-align: left;
-            min-width: 400px;
+            list-style-type: disc;
+            padding-left: 20px;
         }
         .list-item {
             margin-bottom: 5px;
@@ -55,58 +57,53 @@
         }
         @media (max-width: 600px) {
             body {
-                padding: 100px 20px;
-            }
-            .list-content {
-                min-width: 300px;
+                padding: 60px 20px;
             }
         }
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="content">
         <div class="header">
-            List 100
+            list 100
         </div>
         <div class="context-paragraph">
-            Here is a (growing) list of things I want to do before I die. Progress as of 4/1/2025: 1/29
+            here is a (growing) list of things i want to do before i die. progress as of 4/1/2025: 1/29
         </div>
         
-        <div class="list-content">
-            <div class="list-item">1. Hike the Pacific Crest Trail</div>
-            <div class="list-item">2. Learn to cook Thai food</div>
-            <div class="list-item">3. Learn to cook Indian food</div>
-            <div class="list-item">4. Learn to cook Italian food</div>
-            <div class="list-item">5. Read 1000 books </div>
-            <div class="list-item">6. Run a marathon</div>
-            <div class="list-item">7. Run a 100 mile ultramarathon</div>
-            <div class="list-item">8. Bench press 225 pounds</div>
-            <div class="list-item">9. Get a masters degree</div>
-            <div class="list-item">10. Learn a musical instrument</div>
-            <div class="list-item">11. Write or perform in an Off-Broadway play</div>
-            <div class="list-item">12. Make a short film and submit it to festivals</div>
-            <div class="list-item">13. Get scuba certified</div>
-            <div class="list-item">14. Become fluent in Hindi</div>
-            <div class="list-item">15. Become fluent in Spanish</div>
-            <div class="list-item">16. Win a WSOP bracelet</div>
-            <div class="list-item">17. Visit 200 countries</div>
-            <div class="list-item">18. Move to New York City ✅</div>
-            <div class="list-item">19. Sail across or around a body of water</div>
-            <div class="list-item">20. Get published in the New York Times or New Yorker</div>
-            <div class="list-item">21. Live in another country for 6 months</div>
-            <div class="list-item">22. Write for a TV show I watch</div>
-            <div class="list-item">23. Cage-dive with Great White Sharks</div>
-            <div class="list-item">24. Go to a World Cup match</div>
-            <div class="list-item">25. Perform a set at the Comedy Cellar</div>
-            <div class="list-item">26. Complete a bartending course</div>
-            <div class="list-item">27. Publish a novel</div>
-            <div class="list-item">28. Become an Ironman</div>
-            <div class="list-item">29. Spin a set at a bar or club</div>
-
-
-
-        </div>
-        <a href="index.html" class="back-link">← Back</a>
+        <ul class="list-content">
+            <li class="list-item">hike the pacific crest trail</li>
+            <li class="list-item">learn to cook thai food</li>
+            <li class="list-item">learn to cook indian food</li>
+            <li class="list-item">learn to cook italian food</li>
+            <li class="list-item">read 1000 books</li>
+            <li class="list-item">run a marathon</li>
+            <li class="list-item">run a 100 mile ultramarathon</li>
+            <li class="list-item">bench press 225 pounds</li>
+            <li class="list-item">get a masters degree</li>
+            <li class="list-item">learn a musical instrument</li>
+            <li class="list-item">write or perform in an off-broadway play</li>
+            <li class="list-item">make a short film and submit it to festivals</li>
+            <li class="list-item">get scuba certified</li>
+            <li class="list-item">become fluent in hindi</li>
+            <li class="list-item">become fluent in spanish</li>
+            <li class="list-item">win a wsop bracelet</li>
+            <li class="list-item">visit 200 countries</li>
+            <li class="list-item">move to new york city ✅</li>
+            <li class="list-item">sail across or around a body of water</li>
+            <li class="list-item">get published in the new york times or new yorker</li>
+            <li class="list-item">live in another country for 6 months</li>
+            <li class="list-item">write for a tv show i watch</li>
+            <li class="list-item">cage-dive with great white sharks</li>
+            <li class="list-item">go to a world cup match</li>
+            <li class="list-item">perform a set at the comedy cellar</li>
+            <li class="list-item">complete a bartending course</li>
+            <li class="list-item">publish a novel</li>
+            <li class="list-item">become an ironman</li>
+            <li class="list-item">spin a set at a bar or club</li>
+        </ul>
+        
+        <a href="index.html" class="back-link">← back</a>
     </div>
 </body>
 </html>
