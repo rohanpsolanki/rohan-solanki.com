@@ -11,21 +11,60 @@
             box-sizing: border-box;
         }
         body {
+            font-family: 'Times New Roman', Times, serif;
             background-color: black;
+            color: white;
+            line-height: 1.6;
+            padding: 100px 40px;
+            font-size: 18px;
+            text-rendering: optimizeLegibility;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            letter-spacing: -0.5px;
             display: flex;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            cursor: pointer;
+        }
+        .content {
+            max-width: 600px;
+            text-align: left;
+        }
+        .date {
+            margin-bottom: 20px;
+            font-size: 18px;
+            color: #888;
         }
         img {
-            max-width: 90%;
-            max-height: 90vh;
-            object-fit: contain;
+            max-width: 400px;
+            width: 100%;
+            height: auto;
+            margin-bottom: 40px;
+        }
+        .back-link {
+            display: block;
+            font-size: 18px;
+            text-decoration: none;
+            color: white;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 600px) {
+            body {
+                padding: 60px 20px;
+            }
+            img {
+                max-width: 100%;
+            }
         }
     </style>
 </head>
-<body onclick="window.history.back()">
-    <img src="../photography/first_year_in_nyc/IMG_2012.JPG" alt="Marathon">
+<body>
+    <div class="content">
+        <div class="date">october 20, 2024</div>
+        <img src="../photography/first_year_in_nyc/IMG_2012.JPG" alt="Marathon">
+        <a href="../sidequests.html" class="back-link">← back</a>
+    </div>
 </body>
 </html>
