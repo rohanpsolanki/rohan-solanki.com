@@ -1,80 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>rohan solanki</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: 'Times New Roman', Times, serif;
-            background-color: black;
-            color: white;
-            line-height: 1.6;
-            padding: 100px 40px;
-            font-size: 18px;
-            text-rendering: optimizeLegibility;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-            letter-spacing: -0.5px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-        }
-        .content {
-            max-width: 600px;
-            text-align: left;
-        }
-        .profile-photo {
-            width: 300px;
-            height: auto;
-            margin-bottom: 40px;
-            display: block;
-        }
-        .intro-paragraph {
-            margin-bottom: 20px;
-        }
-        a {
-            color: white;
-            text-decoration: underline;
-        }
-        a:hover {
-            opacity: 0.7;
-        }
-        @media (max-width: 600px) {
-            body {
-                padding: 60px 20px;
-            }
-            .profile-photo {
-                width: 150px;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>rohan solanki</title>
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: 'Times New Roman', Times, serif;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container {
+      max-width: 600px;
+      width: 100%;
+      padding: 2rem;
+    }
+
+    nav {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+      margin-bottom: 2.5rem;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: underline;
+      font-size: 18px;
+      width: fit-content;
+    }
+
+    nav a:visited {
+      color: #fff;
+    }
+
+    .location {
+      font-size: 18px;
+      color: #fff;
+    }
+  </style>
 </head>
 <body>
-    <div class="content">
-        <img src="homepage_image.JPG" alt="Rohan Solanki" class="profile-photo">
-        
-        <div class="intro-paragraph">
-            hi, i'm rohan.
-        </div>
-        <div class="intro-paragraph">
-            i live in new york city. i grew up in los angeles and palo alto.
-        </div>
-        <div class="intro-paragraph">
-            for the last two years, i've been a product marketer at workato.
-        </div>
-        <div class="intro-paragraph">
-            i'm interested in technology, storytelling, and living intentionally.
-        </div>
-        <div class="intro-paragraph">
-            in my free time, i <a href="https://rohan-solanki.com/bookshelf.html">read</a>, take <a href="https://rohan-solanki.com/photography.html">photos</a>, and perpetually <a href="https://rohan-solanki.com/sidequests.html">sidequest</a>.
-        </div>
-    </div>
+  <div class="container">
+    <nav>
+      <a href="/bookshelf">bookshelf</a>
+      <a href="/photography">photography</a>
+      <a href="/sidequests">sidequests</a>
+    </nav>
+    <p class="location">brooklyn, ny</p>
+  </div>
 </body>
 </html>
