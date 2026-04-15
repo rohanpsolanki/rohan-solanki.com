@@ -23,60 +23,41 @@
             padding: 100px 40px;
             display: flex;
             justify-content: center;
-            align-items: center;
             min-height: 100vh;
         }
         .content {
             max-width: 600px;
+            width: 100%;
             text-align: left;
         }
         .header {
             margin-bottom: 40px;
-            font-size: 18px;
-            letter-spacing: -1px;
         }
-        .context-paragraph {
+        .date {
+            
             margin-bottom: 40px;
         }
-        .list-content {
-            list-style-type: disc;
-            padding-left: 20px;
+        ul {
+            list-style-type: none;
         }
-        .list-item {
+        li {
             margin-bottom: 5px;
         }
-        .list-item a {
+        a {
             color: white;
             text-decoration: underline;
         }
-        .list-item a:hover {
-            opacity: 0.7;
-        }
-        .list-item-with-photo {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            margin-bottom: 5px;
-        }
-        .list-item-with-photo img {
-            width: 40px;
-            height: 40px;
-            object-fit: cover;
-            cursor: pointer;
-            transition: opacity 0.3s;
-        }
-        .list-item-with-photo img:hover {
+        a:hover {
             opacity: 0.7;
         }
         .back-link {
             display: block;
             margin-top: 40px;
-            font-size: 18px;
-            text-decoration: none;
+            text-decoration: underline;
             color: white;
         }
         .back-link:hover {
-            text-decoration: underline;
+            opacity: 0.7;
         }
         @media (max-width: 600px) {
             body {
@@ -87,52 +68,48 @@
 </head>
 <body>
     <div class="content">
-        
-        <div class="context-paragraph">
-             as of 28 march 2026: 3/34
-        </div>
-        
-        <ul class="list-content">
-            <li class="list-item">hike the pacific crest trail</li>
-            <li class="list-item">learn to cook thai food</li>
-            <li class="list-item">learn to cook indian food</li>
-            <li class="list-item">learn to cook italian food</li>
-            <li class="list-item">read 1000 books</li>
-            <li class="list-item"><a href="side_quests/marathon_photo.html">run a marathon</a> ✅</li>
-            <li class="list-item">run a 100 mile ultramarathon</li>
-            <li class="list-item">run the moab 240</li>
-            <li class="list-item">bench press 225 pounds</li>
-            <li class="list-item">get a masters degree</li>
-            <li class="list-item">learn a musical instrument</li>
-            <li class="list-item">write or perform in a broadway-adjacent play</li>
-            <li class="list-item">make a short film and submit it to festivals</li>
-            <li class="list-item"><a href="side_quests/scuba_photo.html">get scuba certified</a> ✅</li>
-            <li class="list-item">become fluent in hindi</li>
-            <li class="list-item">become fluent in spanish</li>
-            <li class="list-item">win a wsop bracelet</li>
-            <li class="list-item">visit 200 countries</li>
-            <li class="list-item"><a href="side_quests/moving_to_nyc.html">move to new york city</a> ✅</li>
-            <li class="list-item">sail across or around a body of water</li>
-            <li class="list-item">compete in the transpacific yacht race</li>
-            <li class="list-item">get published in the new york times or new yorker</li>
-            <li class="list-item">live in another country for 6 months</li>
-            <li class="list-item">write for a tv show i watch</li>
-            <li class="list-item">cage-dive with great white sharks</li>
-            <li class="list-item">go to a world cup match</li>
-            <li class="list-item">perform a standup comedy set</li>
-            <li class="list-item">complete a bartending course</li>
-            <li class="list-item">publish a novel</li>
-            <li class="list-item">spin a set at a bar or club</li>
-            <li class="list-item">fight in an actual boxing match</li>
-            <li class="list-item">climb mt. kilimanjaro</li>
-            <li class="list-item">go on a 10-day vipassana meditation retreat</li>
-            <li class="list-item">build a home for myself, by myself</li>
-
-
-
+        <div class="header">sidequests</div>
+        <p class="date">as of 28 march 2026</p>
+ 
+        <ul>
+            <li>hike the pacific crest trail</li>
+            <li>learn to cook thai food</li>
+            <li>learn to cook indian food</li>
+            <li>learn to cook italian food</li>
+            <li>read 1000 books</li>
+            <li><a href="side_quests/marathon_photo.html">run a marathon</a> ✅</li>
+            <li>run a 100 mile ultramarathon</li>
+            <li>run the moab 240</li>
+            <li>bench press 225 pounds</li>
+            <li>get a masters degree</li>
+            <li>learn a musical instrument</li>
+            <li>write or perform in a broadway-adjacent play</li>
+            <li>make a short film and submit it to festivals</li>
+            <li><a href="side_quests/scuba_photo.html">get scuba certified</a> ✅</li>
+            <li>become fluent in hindi</li>
+            <li>become fluent in spanish</li>
+            <li>win a wsop bracelet</li>
+            <li>visit 200 countries</li>
+            <li><a href="side_quests/moving_to_nyc.html">move to new york city</a> ✅</li>
+            <li>sail across or around a body of water</li>
+            <li>compete in the transpacific yacht race</li>
+            <li>get published in the new york times or new yorker</li>
+            <li>live in another country for 6 months</li>
+            <li>write for a tv show i watch</li>
+            <li>cage-dive with great white sharks</li>
+            <li>go to a world cup match</li>
+            <li>perform a standup comedy set</li>
+            <li>complete a bartending course</li>
+            <li>publish a novel</li>
+            <li>spin a set at a bar or club</li>
+            <li>fight in an actual boxing match</li>
+            <li>climb mt. kilimanjaro</li>
+            <li>go on a 10-day vipassana meditation retreat</li>
+            <li>build a home for myself, by myself</li>
         </ul>
-        
+ 
         <a href="index.html" class="back-link">← back</a>
     </div>
 </body>
 </html>
+ 
