@@ -23,40 +23,35 @@
             padding: 100px 40px;
             display: flex;
             justify-content: center;
-            align-items: center;
             min-height: 100vh;
         }
         .content {
             max-width: 600px;
+            width: 100%;
             text-align: left;
         }
         .header {
             margin-bottom: 40px;
-            font-size: 18px;
-            letter-spacing: -1px;
         }
-        .list-header {
-            margin-top: 20px;
-            margin-bottom: 20px;
-            font-size: 18px;
-            letter-spacing: -1px;
-            text-decoration: underline;
+        .year {
+            opacity: 0.4;
+            margin-bottom: 12px;
         }
-        .list-content {
+        ul {
             list-style-type: none;
+            margin-bottom: 32px;
         }
-        .list-item {
+        li {
             margin-bottom: 5px;
         }
         .back-link {
             display: block;
             margin-top: 40px;
-            font-size: 18px;
-            text-decoration: none;
+            text-decoration: underline;
             color: white;
         }
         .back-link:hover {
-            text-decoration: underline;
+            opacity: 0.7;
         }
         @media (max-width: 600px) {
             body {
@@ -67,33 +62,27 @@
 </head>
 <body>
     <div class="content">
-        <div class="header">
-            bookshelf
-        </div>
-        
-        <div class="list-header">
-            stage plays (2/2026 - )    
-        </div>
-        <ul class="list-content">
-            <li class="list-item">cambodian rock band by lauren yee</li>
-            <li class="list-item">the glass menagerie by tennessee williams</li>
-            <li class="list-item">long day's journey into night by eugene o'neill</li>
-            <li class="list-item">circle mirror transformation by annie baker</li>
+        <div class="header">bookshelf</div>
+
+        <p class="year">2026</p>
+        <ul>
+            <li>cambodian rock band by lauren yee</li>
+            <li>the glass menagerie by tennessee williams</li>
+            <li>long day's journey into night by eugene o'neill</li>
+            <li>circle mirror transformation by annie baker</li>
         </ul>
-        
-        <div class="list-header">
-            selected past reads    
-        </div>
-        <ul class="list-content">
-            <li class="list-item">kitchen confidential by anthony bourdain</li>
-            <li class="list-item">zero to one by peter thiel</li>
-            <li class="list-item">normal people by sally rooney</li>
-            <li class="list-item">the memory police by yōko ogawa</li>
-            <li class="list-item">never let me go by kazuo ishiguro</li>
-            <li class="list-item">the remains of the day by kazuo ishiguro</li>
-            <li class="list-item">the flick by annie baker</li>
+
+        <p class="year">2025</p>
+        <ul>
+            <li>kitchen confidential by anthony bourdain</li>
+            <li>zero to one by peter thiel</li>
+            <li>normal people by sally rooney</li>
+            <li>the memory police by yōko ogawa</li>
+            <li>never let me go by kazuo ishiguro</li>
+            <li>the remains of the day by kazuo ishiguro</li>
+            <li>the flick by annie baker</li>
         </ul>
-        
+
         <a href="index.html" class="back-link">← back</a>
     </div>
 </body>
