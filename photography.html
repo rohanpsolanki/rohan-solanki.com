@@ -23,20 +23,14 @@
             padding: 100px 40px;
             display: flex;
             justify-content: center;
-            align-items: center;
             min-height: 100vh;
         }
         .content {
             max-width: 600px;
+            width: 100%;
             text-align: left;
         }
         .header {
-            margin-bottom: 40px;
-            font-size: 18px;
-            letter-spacing: -1px;
-        }
-        .subheader {
-            font-size: 18px;
             margin-bottom: 40px;
         }
         .gallery {
@@ -65,7 +59,7 @@
         }
         .gallery-item-details {
             font-size: 18px;
-            color: #888;
+            color: white;
         }
         .gallery-item:hover .gallery-item-description {
             text-decoration: underline;
@@ -73,12 +67,11 @@
         .back-link {
             display: block;
             margin-top: 40px;
-            font-size: 18px;
-            text-decoration: none;
+            text-decoration: underline;
             color: white;
         }
         .back-link:hover {
-            text-decoration: underline;
+            opacity: 0.7;
         }
         @media (max-width: 600px) {
             body {
@@ -92,44 +85,28 @@
 </head>
 <body>
     <div class="content">
-        <div class="header">
-            photography
-        </div>
-        
-        <div class="subheader">
-            here are some photos i took. click the galleries to view. 
-        </div>
+        <div class="header">photography</div>
+
         <div class="gallery">
             <a href="photography/first_year_in_nyc/first_year_in_nyc.html" class="gallery-item">
                 <img src="photography/first_year_in_nyc/IMG_1684.jpeg" alt="First Year in NYC">
-                <div class="gallery-item-description">
-                    first year in nyc
-                </div>
-                <div class="gallery-item-details">
-                    2025
-                </div>
+                <div class="gallery-item-description">first year in nyc</div>
+                <div class="gallery-item-details">2025</div>
             </a>
-            
+
             <a href="photography/cozumel/cozumel.html" class="gallery-item">
                 <img src="photography/cozumel/IMG_3789.jpeg" alt="Cozumel">
-                <div class="gallery-item-description">
-                    cozumel
-                </div>
-                <div class="gallery-item-details">
-                    october 2025
-                </div>
+                <div class="gallery-item-description">cozumel</div>
+                <div class="gallery-item-details">october 2025</div>
             </a>
-            
+
             <a href="photography/italy/italy.html" class="gallery-item">
                 <img src="photography/italy/italy_cover_photo.jpg" alt="Italy">
-                <div class="gallery-item-description">
-                    italy
-                </div>
-                <div class="gallery-item-details">
-                    november 2024
-                </div>
+                <div class="gallery-item-description">italy</div>
+                <div class="gallery-item-details">november 2024</div>
             </a>
         </div>
+
         <a href="index.html" class="back-link">← back</a>
     </div>
 </body>
