@@ -1,60 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>rohan solanki</title>
-  <style>
-    body {
-      background-color: #000;
-      color: #fff;
-      font-family: 'Times New Roman', Times, serif;
-      margin: 0;
-      padding: 0;
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .container {
-      max-width: 600px;
-      width: 100%;
-      padding: 2rem;
-    }
-
-    nav {
-      display: flex;
-      flex-direction: column;
-      gap: 0.4rem;
-      margin-bottom: 2.5rem;
-    }
-
-    nav a {
-      color: #fff;
-      text-decoration: underline;
-      font-size: 18px;
-      width: fit-content;
-    }
-
-    nav a:visited {
-      color: #fff;
-    }
-
-    .location {
-      font-size: 18px;
-      color: #fff;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rohan solanki</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: black;
+            color: white;
+            font-size: 18px;
+            text-rendering: optimizeLegibility;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            letter-spacing: -0.5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .content {
+            max-width: 600px;
+            width: 100%;
+            padding: 2rem;
+            text-align: left;
+        }
+        nav {
+            display: flex;
+            flex-direction: column;
+            gap: 0.4rem;
+            margin-bottom: 2.5rem;
+        }
+        a {
+            color: white;
+            text-decoration: underline;
+            width: fit-content;
+        }
+        a:hover {
+            opacity: 0.7;
+        }
+        @media (max-width: 600px) {
+            .content {
+                padding: 2rem 1.25rem;
+            }
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <nav>
-      <a href="/bookshelf">bookshelf</a>
-      <a href="/photography">photography</a>
-      <a href="/sidequests">sidequests</a>
-    </nav>
-    <p class="location">brooklyn, ny</p>
-  </div>
+    <div class="content">
+        <nav>
+            <a href="https://rohan-solanki.com/bookshelf.html">bookshelf</a>
+            <a href="https://rohan-solanki.com/photography.html">photography</a>
+            <a href="https://rohan-solanki.com/sidequests.html">sidequests</a>
+        </nav>
+        <p>brooklyn, ny</p>
+    </div>
 </body>
 </html>
