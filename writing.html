@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>writing</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: black;
+            color: white;
+            line-height: 1.05;
+            font-size: 18px;
+            text-rendering: optimizeLegibility;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            letter-spacing: -0.5px;
+            padding: 100px 40px;
+            display: flex;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        .content {
+            max-width: 600px;
+            width: 100%;
+            text-align: left;
+        }
+        .header {
+            margin-bottom: 40px;
+        }
+        ul {
+            list-style-type: none;
+        }
+        li {
+            margin-bottom: 5px;
+            display: flex;
+            gap: 2rem;
+        }
+        a {
+            color: white;
+            text-decoration: underline;
+        }
+        a:hover {
+            opacity: 0.7;
+        }
+        .date {
+            color: white;
+            white-space: nowrap;
+        }
+        .back-link {
+            display: block;
+            margin-top: 40px;
+            text-decoration: underline;
+            color: white;
+        }
+        .back-link:hover {
+            opacity: 0.7;
+        }
+        @media (max-width: 600px) {
+            body {
+                padding: 60px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="header">writing</div>
+
+        <ul>
+            <li>
+                <a href="writing/essay-title.html">your essay title here</a>
+                <span class="date">16 April 2026</span>
+            </li>
+        </ul>
+
+        <a href="index.html" class="back-link">back</a>
+    </div>
+</body>
+</html>
